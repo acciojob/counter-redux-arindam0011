@@ -4,8 +4,8 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
-      sspecPattern: "cypress/tests/*.cy.js"
     },
+    specPattern: "cypress/tests/*.cy.js",
   },
 
   component: {
