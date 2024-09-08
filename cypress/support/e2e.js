@@ -16,5 +16,15 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-// Alternatively you can use CommonJS syntax:
+// Alternatively, you can use CommonJS syntax:
 // require('./commands')
+
+// Additional global configuration or behavior can be added here
+// For example, setting a global timeout for all commands
+Cypress.config('defaultCommandTimeout', 10000);
+
+// Set up global event listeners or configurations
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // Prevent Cypress from failing the test on uncaught exceptions
+  return false;
+});

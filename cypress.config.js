@@ -6,10 +6,11 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     specPattern: "cypress/tests/**/*.cy.{js,jsx,ts,tsx}",
+    supportFile: 'cypress/support/e2e.js', 
   },
 
   component: {
-    specPattern: "cypress/tests/**/*.cy.{js,jsx,ts,tsx}",
+  
     devServer: {
       framework: "react",
       bundler: "webpack",
