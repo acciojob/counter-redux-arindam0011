@@ -9,7 +9,7 @@
     const dispatch = useDispatch()
     return (
         <div>
-          <p>Your count is: <span>{count}</span></p>
+          <p>Your count is: <span id="counter-value">{count}</span></p>
           <button id="increment" onClick={() => dispatch(increment(1))}>Increment</button>
           <button id="decrement" onClick={() => dispatch(decrement(1))}>Decrement</button>
         </div>
