@@ -9,7 +9,6 @@ const counterSlice = createSlice({
             return state + action.payload
         },
         decrement(state, action) {
-            if (state <= 0) return 0;
             return state - action.payload
         }
     }
